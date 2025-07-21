@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "mi-sitio-web",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NachoMenna/mi-sitio-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NachoMenna/mi-sitio-web/issues"
+  },
+  "homepage": "https://github.com/NachoMenna/mi-sitio-web#readme",
+  "description": ""
+}
