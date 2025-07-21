@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "nombre": "Inserto CNMG",
+    "categoria": "Torneado",
+    "subcategoria": "Acero",
+    "precio": 5000,
+    "imagen": "img/producto1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Fresa de Carburo",
+    "categoria": "Fresado",
+    "subcategoria": "Aluminio",
+    "precio": 12000,
+    "imagen": "img/producto2.jpg"
+  }
+]
