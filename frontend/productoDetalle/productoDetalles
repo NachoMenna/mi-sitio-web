@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detalle de Producto - Solvex</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="productoDetalle.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="bg-dark text-white p-3">
+      <nav
+        class="container d-flex justify-content-between align-items-center py-3"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="img/logo.png" alt="Logo de Solvex" class="logo-img" />
+        </a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link text-white">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="laEmpresa.html" class="nav-link text-white">La Empresa</a>
+          </li>
+          <li class="nav-item">
+            <a href="productos.html" class="nav-link text-white active"
+              >Productos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="descargas.html" class="nav-link text-white">Descargas</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html" class="nav-link text-white">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Detalle del producto -->
+    <section class="container my-5 producto-detalle" data-aos="fade-up">
+      <div class="row">
+        <!-- Imagen producto -->
+        <div class="col-md-6">
+          <img
+            id="imagenPrincipal"
+            src=""
+            alt="Producto"
+            class="img-fluid border rounded"
+          />
+          <div id="miniaturas" class="mt-3 d-flex gap-2"></div>
+        </div>
+
+        <!-- Info producto -->
+        <div class="col-md-6">
+          <h1 id="nombreProducto" class="text-primary fw-bold"></h1>
+          <p class="text-muted">
+            Código: <strong id="codigoProducto"></strong> | Marca:
+            <strong id="marcaProducto"></strong>
+          </p>
+          <div class="mb-3">
+            <img id="logoMarca" src="" alt="Logo Marca" style="height: 40px" />
+          </div>
+
+          <h2 id="precio" class="fw-bold text-dark"></h2>
+          <p class="mb-1">IVA: <span id="iva"></span></p>
+          <p class="fw-semibold">
+            Precio con IVA: <span id="precioFinal"></span>
+          </p>
+
+          <p id="stock" class="fw-bold"></p>
+
+          <hr />
+          <h4>Descripción</h4>
+          <p id="descripcion"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>
+        &copy; 2025 Solvex Soluciones Industriales SAS - Todos los derechos
+        reservados.
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+
+    <!-- Script para cargar datos del producto -->
+    <script>
+      // Simulación: obtengo ID de producto desde la URL (productoDetalle.html?id=123)
+      const params = new URLSearchParams(window.location.search);
+      const idProducto = params.get("id");
+
+      // Simulación de llamada al backend (API)
+      fetch(`https://tuservidor.com/api/productos/${idProducto}`)
+        .then((res) => res.json())
+        .then((data) => {
+          document.getElementById("nombreProducto").textContent = data.nombre;
+          document.getElementById("codigoProducto").textContent = data.codigo;
+          document.getElementById("marcaProducto").textContent = data.marca;
+          document.getElementById("logoMarca").src = data.logo;
+          document.getElementById("imagenPrincipal").src = data.imagenes[0];
+          document.getElementById(
+            "precio"
+          ).textContent = `$ ${data.precioSinIVA}`;
+          document.getElementById(
+            "iva"
+          ).textContent = `${data.iva}% | $ ${data.precioIVA}`;
+          document.getElementById(
+            "precioFinal"
+          ).textContent = `$ ${data.precioFinal}`;
+          document.getElementById("descripcion").textContent = data.descripcion;
+
+          const stockEl = document.getElementById("stock");
+          if (data.stock) {
+            stockEl.textContent = "Disponible";
+            stockEl.classList.add("text-success");
+          } else {
+            stockEl.textContent = "Producto sin stock";
+            stockEl.classList.add("text-danger");
+          }
+
+          // Miniaturas
+          const miniaturas = document.getElementById("miniaturas");
+          data.imagenes.forEach((img) => {
+            const imgEl = document.createElement("img");
+            imgEl.src = img;
+            imgEl.className = "img-thumbnail";
+            imgEl.onclick = () =>
+              (document.getElementById("imagenPrincipal").src = img);
+            miniaturas.appendChild(imgEl);
+          });
+        })
+        .catch((err) => console.error("Error al cargar el producto:", err));
+    </script>
+  </body>
+</html>

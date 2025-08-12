@@ -1,0 +1,18 @@
+{
+  "id": 123,
+  "nombre": "Fresa de Carburo Sólido 6mm",
+  "codigo": "FC-6MM-123",
+  "marca": "Walter Tools",
+  "logo": "https://tuservidor.com/uploads/marcas/walter.png",
+  "imagenes": [
+    "https://tuservidor.com/uploads/productos/fresa1.jpg",
+    "https://tuservidor.com/uploads/productos/fresa2.jpg",
+    "https://tuservidor.com/uploads/productos/fresa3.jpg"
+  ],
+  "precioSinIVA": 1000,
+  "iva": 21,
+  "precioIVA": 210,
+  "precioFinal": 1210,
+  "stock": true,
+  "descripcion": "Fresa de carburo sólido para corte de acero y aluminio."
+}
