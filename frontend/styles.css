@@ -99,3 +99,52 @@ footer {
     gap: 0.5rem;
   }
 }
+/* Layout general para productos */
+.productos-layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Menú lateral */
+.menu-lateral {
+  width: 220px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-lateral li {
+  margin-bottom: 10px;
+}
+
+.menu-lateral ul ul {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Grid de productos */
+.productos-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* Imagen en la tarjeta */
+.producto img {
+  max-width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}

@@ -39,7 +39,7 @@
             <a href="laEmpresa.html" class="nav-link text-white">La Empresa</a>
           </li>
           <li class="nav-item">
-            <a href="productos.html" class="nav-link text-white active"
+            <a href="productosEnGeneral.html" class="nav-link text-white active"
               >Productos</a
             >
           </li>

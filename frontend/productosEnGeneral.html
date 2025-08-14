@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SOLVEX Soluciones Industriales - Inicio</title>
-
+    <title>Productos - Mi Sitio Web</title>
     <!-- Estilos -->
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -21,7 +20,6 @@
     />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
-
   <body>
     <header class="bg-dark text-white p-3">
       <nav
@@ -52,43 +50,45 @@
       </nav>
     </header>
 
-    <section
-      id="inicio"
-      class="hero text-center p-5 bg-light"
-      data-aos="fade-up"
-    >
-      <h1 class="display-4">Bienvenidos a Tecno Tools</h1>
-      <p class="lead">Herramientas de corte para la industria metalúrgica.</p>
-    </section>
+    <main class="productos-layout">
+      <!-- Menú lateral -->
+      <aside class="menu-lateral">
+        <ul>
+          <li>
+            <a href="#" class="categoria" data-cat="Torneado">Torneado</a>
+          </li>
+          <li><a href="#" class="categoria" data-cat="Fresado">Fresado</a></li>
+          <li><a href="#" class="categoria" data-cat="Roscado">Roscado</a></li>
+          <li>
+            <a href="#" class="categoria" data-cat="Perforado">Perforado</a>
+          </li>
+          <li>
+            <a href="#" class="categoria" data-cat="Accesorios">Accesorios</a>
+          </li>
+          <li>
+            <a href="#" class="categoria" data-cat="Instrumentos de medición"
+              >Instrumentos de medición</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="categoria"
+              data-cat="Aceites y Grasas Industriales"
+              >Aceites y Grasas Industriales</a
+            >
+          </li>
+        </ul>
+      </aside>
 
-    <section class="container my-5" data-aos="fade-up">
-      <h2>Quiénes Somos</h2>
-      <p>
-        Somos una empresa con más de 30 años de experiencia comercializando
-        soluciones para el mecanizado a la industria metalúrgica. Tecno Tools
-        fue fundada en la localidad de San Francisco, ubicación estratégica para
-        abarcar la principal zona de producción Agro-Industrial y Automotriz de
-        Argentina. Representamos marcas líderes a nivel mundial en mecanizado,
-        garantizando productividad y eficiencia a nuestros clientes.
-      </p>
-    </section>
+      <!-- Grid productos -->
+      <section id="productosGrid" class="productos-grid"></section>
+    </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-      <p>
-        &copy; 2025 Solvex Soluciones Industriales SAS - Todos los derechos
-        reservados.
-      </p>
+    <footer>
+      <p>© 2025 Mi Sitio Web</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    </script>
-    <script src="script.js"></script>
+    <script src="productos.js"></script>
   </body>
 </html>
