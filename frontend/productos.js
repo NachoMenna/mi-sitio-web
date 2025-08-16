@@ -68,7 +68,7 @@ function mostrarProductos(filtroCat = null) {
   document.querySelectorAll(".btn-ver").forEach((btn) => {
     btn.addEventListener("click", (e) => {
       const id = e.target.getAttribute("data-id");
-      window.location.href = `productoDetalle.html?id=${id}`;
+      window.location.href = `../productoDetalle/productoDetalles.html?id=${id}`;
     });
   });
 }
