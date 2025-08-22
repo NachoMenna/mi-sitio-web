@@ -1,150 +1,134 @@
-/* 1. SCROLL SUAVE */
-html {
-  scroll-behavior: smooth;
+/* Paleta */
+:root {
+  --azul: #0057ff;
+  --celeste: #c2def3;
+  --gris: #363b41;
+  --negro: #000000;
+  --blanco: #ffffff;
 }
 
-/* 2. NAVBAR FIJA CON FONDO Y SOMBRA */
-header {
+/* Header */
+.header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #212529; /* fondo oscuro */
+  background-color: var(--gris);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
 }
 
-/* 3. PADDING PARA NO QUEDAR DETRÁS DEL HEADER */
-body {
-  padding-top: 70px; /* ajusta si tu header cambia */
-  background-color: #f8f9fa;
-}
-
-/* 4. LOGO - solo estilo para el link si tuvieras texto */
-.logo {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: #ffffff;
-  text-decoration: none; /* quita subrayado si hay texto */
-}
-
-/* 5. PRODUCTOS: caja con hover */
-.producto {
-  background-color: #ffffff;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 1rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-}
-
-.producto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* 6. FORMULARIO */
-form input,
-form textarea {
-  border-radius: 0.5rem;
-  border: 1px solid #ced4da;
-  box-shadow: none;
-  padding: 0.5rem;
-  width: 100%;
-  margin-bottom: 1rem;
-  font-family: inherit;
-}
-
-form button {
-  border-radius: 0.5rem;
-  padding: 0.5rem 1.5rem;
-}
-
-/* 7. ANIMACIONES SIMPLES (para combinar con Bootstrap o AOS.js si se usa) */
-.fade-in {
-  animation: fadeIn 1s ease-in-out;
-}
-
-/* 8. PIE DE PÁGINA */
-footer {
-  background-color: #212529;
-  color: #ffffff;
-  padding: 1rem 0;
-}
-
-/* 9. LOGO IMG */
+/* Logo */
 .logo-img {
-  height: 60px;
-  max-width: 100%;
+  height: 50px;
   width: auto;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Adaptativo para pantallas chicas */
-@media (max-width: 768px) {
-  .logo-img {
-    height: 45px;
-  }
-
-  /* Opcional: nav-pills en columna para móvil */
-  ul.nav.nav-pills {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-/* Layout general para productos */
-.productos-layout {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-}
-
-/* Menú lateral */
-.menu-lateral {
-  width: 220px;
-}
-
-.menu-lateral ul {
+/* Menú Desktop */
+.nav-menu {
   list-style: none;
+  margin: 0;
   padding: 0;
-  margin: 0;
+  gap: 1rem;
+}
+.nav-menu .nav-link {
+  color: var(--blanco);
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav-menu .nav-link:hover,
+.nav-menu .nav-link.active {
+  color: var(--azul);
 }
 
-.menu-lateral li {
-  margin-bottom: 10px;
+/* Buscador Desktop */
+.search-form {
+  margin-left: 1rem;
+  background: var(--blanco);
+  border-radius: 25px;
+  border: 1px solid var(--celeste);
+}
+.search-input {
+  border: none;
+  padding: 0.4rem 0.8rem;
+  outline: none;
+}
+.search-btn {
+  background: var(--azul);
+  color: var(--blanco);
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
 }
 
-.menu-lateral ul ul {
-  margin-left: 15px;
-  font-size: 14px;
-  color: #555;
+/* Usuario Desktop */
+.user-info {
+  color: var(--blanco);
+  margin-left: 1rem;
+  gap: 0.4rem;
 }
 
-/* Grid de productos */
-.productos-grid {
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 20px;
+/* Login Desktop */
+.btn-login {
+  margin-left: 1rem;
+  background: var(--azul);
+  color: var(--blanco);
+  padding: 0.4rem 0.8rem;
+  border-radius: 25px;
+  text-decoration: none;
+  gap: 0.4rem;
+}
+.btn-login:hover {
+  background: var(--celeste);
+  color: var(--negro);
 }
 
-/* Imagen en la tarjeta */
-.producto img {
-  max-width: 100%;
-  height: 100px;
-  object-fit: contain;
-  margin-bottom: 10px;
+/* Carrito */
+.cart {
+  margin-left: 1rem;
+  color: var(--blanco);
+  font-weight: bold;
+  gap: 0.4rem;
 }
 
-.producto h3 {
-  font-size: 16px;
-  text-align: center;
-  margin: 0;
+/* Íconos Mobile ocultos en desktop */
+.mobile-icons {
+  display: none;
+  gap: 1rem;
+}
+.mobile-icons button,
+.mobile-icons a {
+  background: none;
+  border: none;
+  color: var(--blanco);
+  font-size: 1.2rem;
+}
+
+/* HERO */
+.hero {
+  background-color: var(--celeste);
+  color: var(--gris);
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--gris);
+  color: var(--blanco);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .nav-menu,
+  .search-form,
+  .user-info,
+  .btn-login,
+  .cart {
+    display: none !important;
+  }
+  .mobile-icons {
+    display: flex;
+    margin-left: auto;
+  }
+  .mobile-search {
+    background: var(--celeste);
+  }
 }

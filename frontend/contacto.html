@@ -21,42 +21,77 @@
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="bg-dark text-white p-3">
-      <nav
-        class="container d-flex justify-content-between align-items-center py-3"
-      >
-        <a href="index.html" class="logo d-flex align-items-center">
-          <img src="img/logo.png" alt="Logo de Solvex" class="logo-img" />
-        </a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link text-white">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a href="laEmpresa.html" class="nav-link text-white">La Empresa</a>
-          </li>
-          <li class="nav-item">
-            <a href="productosEnGeneral.html" class="nav-link text-white"
-              >Productos</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="descargas.html" class="nav-link text-white">Descargas</a>
-          </li>
-          <li class="nav-item">
-            <a href="contacto.html" class="nav-link active text-white"
-              >Contacto</a
-            >
-          </li>
-        </ul>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo" class="logo-img" />
+          </a>
+
+          <!-- Botón hamburguesa -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú colapsable -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="laEmpresa.html">La Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="descargas.html">Descargas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+
+            <!-- Íconos -->
+            <div class="d-flex align-items-center">
+              <button class="btn btn-outline-light me-2">
+                <i class="fas fa-search"></i>
+              </button>
+              <button class="btn btn-outline-light me-2">
+                <i class="fas fa-user"></i>
+              </button>
+              <a href="carrito.html" class="btn btn-outline-light"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </nav>
+      <!-- Buscador desplegable en Mobile -->
+      <div class="mobile-search collapse" id="searchBox">
+        <form class="d-flex p-2">
+          <input
+            type="text"
+            placeholder="Buscar productos..."
+            class="form-control me-2"
+          />
+          <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
     </header>
 
     <main>
       <h1>Contacto</h1>
       <p>Contacto</p>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
