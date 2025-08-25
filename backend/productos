@@ -1,0 +1,26 @@
+CREATE DATABASE IF NOT EXISTS tienda;
+USE tienda;
+
+CREATE TABLE productos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  codigo VARCHAR(10) NOT NULL,
+  nombre VARCHAR(50) NOT NULL,
+  marca VARCHAR(50) NOT NULL,
+  logo_marca VARCHAR(255),
+  imagen_producto VARCHAR(255),
+  precio_usd DECIMAL(10,2) NOT NULL,
+  iva DECIMAL(10,2) NOT NULL,
+  precio_con_iva DECIMAL(10,2) NOT NULL,
+  observaciones TEXT,
+  stock INT DEFAULT 0,
+  stock_imagen VARCHAR(255),
+  stock_leyenda VARCHAR(255)
+);
+
+-- Ejemplos de carga
+INSERT INTO productos 
+(codigo, nombre, marca, logo_marca, imagen_producto, precio_usd, iva, precio_con_iva, observaciones, stock, stock_imagen, stock_leyenda)
+VALUES
+('A1B2C3', 'ProductoDePrueba1234567890', 'MarcaX1', 'logo_marcax1.png', 'prod1.png', 100, 21, 121, 'Observación con símbolos @$#! muy larga para probar funcionamiento.', 10, 'check.png', 'Producto disponible en stock'),
+
+('Z9Y8X7', 'OtroProductoDePrueba9876543210', 'MarcaY2', 'logo_marcay2.png', 'prod2.png', 50, 10.5, 60.5, 'Observación de prueba, con texto adicional.', 0, 'cross.png', 'Producto no disponible');

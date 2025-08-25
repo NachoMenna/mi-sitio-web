@@ -193,5 +193,31 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <div id="gridProductos"></div>
+
+    <script>
+      async function cargarProductos() {
+        const res = await fetch("http://localhost:3000/productos");
+        const productos = await res.json();
+
+        const grid = document.getElementById("gridProductos");
+        grid.innerHTML = productos
+          .map(
+            (p) => `
+    <div class="producto">
+      <img src="${p.imagen_producto}" alt="${p.nombre}">
+      <h3>${p.nombre}</h3>
+      <p>Marca: ${p.marca} <img src="${p.logo_marca}" class="logo"></p>
+      <p>Precio: $${p.precio_con_iva} USD (IVA incluido)</p>
+      <img src="${p.stock_icon}" alt="Stock">
+      <p>${p.leyenda_stock}</p>
+    </div>
+  `
+          )
+          .join("");
+      }
+
+      cargarProductos();
+    </script>
   </body>
 </html>

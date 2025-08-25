@@ -154,7 +154,7 @@
       const idProducto = params.get("id");
 
       // Simulación de llamada al backend (API)
-      fetch(`https://tuservidor.com/api/productos/${idProducto}`)
+      fetch(`https://tuservidor.com/api/producto.php?id=${idProducto}`)
         .then((res) => res.json())
         .then((data) => {
           document.getElementById("nombreProducto").textContent = data.nombre;

@@ -9,6 +9,7 @@ const productos = [
     precio: 2500,
     imagen: "img/productos/fresa6mm.jpg",
     descripcion: "Fresa de carburo sólido para mecanizado de acero inoxidable.",
+    href: "./productoDetalle/productoDetalles.html",
   },
   {
     id: 2,
