@@ -4,135 +4,176 @@ const productos = [
   // Fresas
   {
     id: 1,
-    nombre: "Fresa de Carburo 6mm",
-    categoria: "fresas",
-    precio: 2500,
-    imagen: "img/productos/fresa6mm.jpg",
-    descripcion: "Fresa de carburo sólido para mecanizado de acero inoxidable.",
-    href: "./productoDetalle/productoDetalles.html",
+    nombre: "Fresado de engranajes",
+    categoria: "fresado",
+    imagen: "files/img_categoria/fresado/fresado.jpg",
+    descripcion: "Fresado de Engranajes",
+    href: "https://book.yunzhan365.com/bolny/qdiv/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
   {
     id: 2,
-    nombre: "Fresa de Carburo 12mm",
-    categoria: "fresas",
-    precio: 4200,
-    imagen: "img/productos/fresa12mm.jpg",
-    descripcion: "Fresa de carburo sólido de 4 labios para mecanizado general.",
+    nombre: "SM Series",
+    categoria: "fresado",
+    imagen: "files/img_categoria/fresado/fresado_1.jpg",
+    descripcion: "Fresado de ranuras",
   },
   {
     id: 3,
-    nombre: "Fresa Esférica 8mm",
-    categoria: "fresas",
-    precio: 3800,
-    imagen: "img/productos/fresaEsferica8mm.jpg",
-    descripcion: "Fresa esférica para moldes y matricería.",
+    nombre: "HML Series",
+    categoria: "fresado",
+    imagen: "files/img_categoria/fresado/fresado_2.jpg",
+    descripcion: "Fresado de Alto Avance",
+  },
+
+  {
+    id: 4,
+    nombre: "OMT Endmill Series",
+    categoria: "fresado",
+    imagen: "files/img_categoria/fresado/fresado_3.jpg",
+    descripcion: "Mecanizado de Alta Eficiencia en Titánio",
+  },
+
+  {
+    id: 4,
+    nombre: "End Mills and Drills",
+    categoria: "fresado",
+    imagen: "files/img_categoria/fresado/fresado_5.jpg",
+    descripcion: "Fresado y Perforado",
   },
 
   // Brocas
-  {
-    id: 4,
-    nombre: "Broca HSS 5mm",
-    categoria: "brocas",
-    precio: 900,
-    imagen: "img/productos/broca5mm.jpg",
-    descripcion: "Broca de acero rápido (HSS) para uso general.",
-  },
+
   {
     id: 5,
-    nombre: "Broca HSS 10mm",
-    categoria: "brocas",
-    precio: 1500,
-    imagen: "img/productos/broca10mm.jpg",
-    descripcion: "Broca de acero rápido (HSS) para mecanizado en acero.",
+    nombre: "RHD Modular Drills",
+    categoria: "perforado",
+    imagen: "files/img_categoria/perforado/perforado.jpg",
+    descripcion: "Perforado con Mechas Modulares",
   },
   {
     id: 6,
-    nombre: "Broca de Carburo 6mm",
-    categoria: "brocas",
-    precio: 3200,
-    imagen: "img/productos/brocaCarburo6mm.jpg",
-    descripcion: "Broca de carburo sólido recubierta TiAlN.",
+    nombre: "ODP Series",
+    categoria: "perforado",
+    imagen: "files/img_categoria/perforado/perforado_1.jpg",
+    descripcion:
+      "Perforado de alta eficiencia - diámetros pequeños - agujeros profundos",
+  },
+
+  {
+    id: 7,
+    nombre: "End Mills and Drills",
+    categoria: "perforado",
+    imagen: "files/img_categoria/perforado/perforado_2.jpg",
+    descripcion: "Perforado y fresado",
   },
 
   // Torneado
   {
-    id: 7,
-    nombre: "Inserto CNMG120404",
-    categoria: "torneado",
-    precio: 750,
-    imagen: "img/productos/insertoCNMG.jpg",
-    descripcion: "Inserto CNMG para torneado de acero.",
-  },
-  {
     id: 8,
-    nombre: "Inserto DNMG150404",
+    nombre: "ISO PCD Turning Insert",
     categoria: "torneado",
-    precio: 820,
-    imagen: "img/productos/insertoDNMG.jpg",
-    descripcion: "Inserto DNMG para torneado de acero inoxidable.",
-  },
-  {
-    id: 9,
-    nombre: "Inserto SNMG120404",
-    categoria: "torneado",
-    precio: 790,
-    imagen: "img/productos/insertoSNMG.jpg",
-    descripcion: "Inserto SNMG para desbaste en fundición.",
+    imagen: "files/img_categoria/Torneado/torneado_1.jpg",
+    descripcion: "Inserto de Torneado PCD ISO",
   },
 
-  // Sierras
+  {
+    id: 9,
+    nombre: "ISO PCBN Turning Inserts",
+    categoria: "torneado",
+    imagen: "files/img_categoria/Torneado/torneado_2.jpg",
+    descripcion: "Inserto de Torneado PCBN ISO",
+  },
+
   {
     id: 10,
-    nombre: "Sierra Bimetálica 14TPI",
-    categoria: "sierras",
-    precio: 5500,
-    imagen: "img/productos/sierra14tpi.jpg",
-    descripcion: "Sierra bimetálica de 300mm con 14 dientes por pulgada.",
+    nombre: "Series Product For Turning Exotic Alloy",
+    categoria: "torneado",
+    imagen: "files/img_categoria/Torneado/torneado_3.jpg",
+    descripcion: "Torneado de Aceros Exóticos: OP6105A/OP6115A/OP6125A",
   },
+
   {
     id: 11,
-    nombre: "Sierra Bimetálica 18TPI",
-    categoria: "sierras",
-    precio: 5800,
-    imagen: "img/productos/sierra18tpi.jpg",
-    descripcion: "Sierra bimetálica de 300mm con 18 dientes por pulgada.",
+    nombre: "High-hardness Steel Turning Products Series",
+    categoria: "torneado",
+    imagen: "files/img_categoria/Torneado/torneado_4.jpg",
+    descripcion: "Torneado de Aceros Endurecidos: OPH120",
   },
+  {
+    id: 12,
+    nombre: "TiCN Cermet Inserts",
+    categoria: "torneado",
+    imagen: "files/img_categoria/Torneado/torneado_5.jpg",
+    descripcion: "Insertos de Cermet con Recubrimiento TiCN",
+  },
+
+  {
+    id: 13,
+    nombre: "Small Part Machining Catalog",
+    categoria: "torneado",
+    imagen: "files/img_categoria/Torneado/torneado_7.jpg",
+    descripcion: "Mecanizado de Pequeñas Partes",
+  },
+
+  // Líneas Generales
+  {
+    id: 14,
+    nombre: "2023 New Products Brochure",
+    categoria: "lineasgenerales",
+    imagen: "files/img_categoria/general/perforado_3.jpg",
+    descripcion: "Nuevos Lanzamientos Año 2023",
+  },
+  {
+    id: 15,
+    nombre: "Cutting Inserts Catalog",
+    categoria: "lineasgenerales",
+    imagen: "files/img_categoria/general/torneado_6.jpg",
+    descripcion: "Catálogo de Insertos",
+  },
+  {
+    id: 16,
+    nombre: "Cutting Tools Catalog",
+    categoria: "lineasgenerales",
+    imagen: "files/img_categoria/general/torneado_8.jpg",
+    descripcion: "Catálogo de Herramientas de Corte",
+  },
+
+  /* 
+
 
   // Portaherramientas
   {
-    id: 12,
+    id: ,
     nombre: "Portaherramientas SCLCR 1212H09",
     categoria: "torneado",
-    precio: 9500,
     imagen: "img/productos/portaherramientasSCLCR.jpg",
     descripcion: "Portaherramientas para insertos CCMT.",
   },
   {
-    id: 13,
+    id: ,
     nombre: "Portaherramientas SDNCN 1616H11",
     categoria: "torneado",
-    precio: 11200,
     imagen: "img/productos/portaherramientasSDNCN.jpg",
     descripcion: "Portaherramientas para insertos DNMG.",
   },
 
   // Accesorios
   {
-    id: 14,
+    id: ,
     nombre: "Llave Torx T15",
     categoria: "accesorios",
-    precio: 500,
     imagen: "img/productos/llaveTorxT15.jpg",
     descripcion: "Llave Torx T15 para ajuste de insertos.",
   },
   {
-    id: 15,
+    id: ,
     nombre: "Tornillo para Inserto M2.5",
     categoria: "accesorios",
-    precio: 150,
     imagen: "img/productos/tornilloInserto.jpg",
     descripcion: "Tornillo de repuesto para insertos de torneado.",
   },
+
+  */
 ];
 
 // Función para mostrar productos
@@ -158,16 +199,29 @@ function mostrarProductos(filtroCat = null) {
   filtrados.forEach((prod) => {
     const div = document.createElement("div");
     div.classList.add("col");
-    div.innerHTML = `
-      <div class="producto card h-100 shadow-sm">
-        <img src="${prod.imagen}" alt="${prod.nombre}" class="card-img-top" />
-        <div class="card-body">
-          <h5 class="card-title">${prod.nombre}</h5>
-          <p class="card-text">${prod.descripcion}</p>
-          <p class="text-primary fw-bold">$${prod.precio}</p>
-        </div>
+
+    // Si el producto tiene href, le pongo un <a> envolviendo el contenido
+    const contenido = `
+    <div class="producto card h-100 shadow-sm">
+      <img src="${prod.imagen}" alt="${prod.nombre}" class="card-img-top" />
+      <div class="card-body">
+        <h5 class="card-title">${prod.nombre}</h5>
+        <p class="card-text">${prod.descripcion}</p>
+        ${
+          prod.precio
+            ? `<p class="text-primary fw-bold">$${prod.precio}</p>`
+            : ""
+        }
       </div>
-    `;
+    </div>
+  `;
+
+    if (prod.href) {
+      div.innerHTML = `<a href="${prod.href}" target="_blank" class="text-decoration-none text-dark">${contenido}</a>`;
+    } else {
+      div.innerHTML = contenido;
+    }
+
     grid.appendChild(div);
   });
 }

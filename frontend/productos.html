@@ -26,7 +26,11 @@
         <div class="container">
           <!-- Logo -->
           <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="Logo" class="logo-img" />
+            <img
+              src="files/img_inicio/logo_solvex.png"
+              alt="Logo"
+              class="logo-img"
+            />
           </a>
 
           <!-- Botón hamburguesa -->
@@ -64,8 +68,9 @@
               <button class="btn btn-outline-light me-2">
                 <i class="fas fa-search"></i>
               </button>
-              <button class="btn btn-outline-light me-2">
+               <a href="descargas.html"><button class="btn btn-outline-light me-2">
                 <i class="fas fa-user"></i>
+              </a>
               </button>
               <a href="carrito.html" class="btn btn-outline-light">
                 <i class="fas fa-shopping-cart"></i>
@@ -87,7 +92,7 @@
             class="card text-center h-100"
           >
             <img
-              src="img/cat-torneado.jpg"
+              src="files/img_productos/torneado.png"
               class="card-img-top"
               alt="Torneado"
             />
@@ -102,7 +107,11 @@
             href="productosEnGeneral.html?categoria=fresas"
             class="card text-center h-100"
           >
-            <img src="img/cat-fresado.jpg" class="card-img-top" alt="Fresado" />
+            <img
+              src="files/img_productos/fresado.png"
+              class="card-img-top"
+              alt="Fresado"
+            />
             <div class="card-body">
               <h5 class="card-title">Fresado</h5>
             </div>
@@ -114,7 +123,11 @@
             href="productosEnGeneral.html?categoria=roscado"
             class="card text-center h-100"
           >
-            <img src="img/cat-roscado.jpg" class="card-img-top" alt="Roscado" />
+            <img
+              src="files/img_productos/roscado.png"
+              class="card-img-top"
+              alt="Roscado"
+            />
             <div class="card-body">
               <h5 class="card-title">Roscado</h5>
             </div>
@@ -127,7 +140,7 @@
             class="card text-center h-100"
           >
             <img
-              src="img/cat-perforado.jpg"
+              src="files/img_productos/perforado.png"
               class="card-img-top"
               alt="Perforado"
             />
@@ -136,7 +149,8 @@
             </div>
           </a>
         </div>
-        <!-- Accesorios -->
+
+        <!-- Accesorios 
         <div class="col-6 col-md-3">
           <a
             href="productosEnGeneral.html?categoria=accesorios"
@@ -152,7 +166,8 @@
             </div>
           </a>
         </div>
-        <!-- Instrumentos -->
+
+         Instrumentos
         <div class="col-6 col-md-3">
           <a
             href="productosEnGeneral.html?cat=instrumentos de medición"
@@ -168,7 +183,8 @@
             </div>
           </a>
         </div>
-        <!-- Aceites y grasas -->
+        Aceites y grasas 
+    
         <div class="col-6 col-md-3">
           <a
             href="productosEnGeneral.html?cat=Aceites y Grasas Industriales"
@@ -184,6 +200,7 @@
             </div>
           </a>
         </div>
+        -->
       </div>
     </main>
 
@@ -194,7 +211,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <div id="gridProductos"></div>
-
     <script>
       async function cargarProductos() {
         const res = await fetch("http://localhost:3000/productos");
