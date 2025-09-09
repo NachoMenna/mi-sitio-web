@@ -16,6 +16,7 @@ const productos = [
     categoria: "fresado",
     imagen: "files/img_categoria/fresado/fresado_1.jpg",
     descripcion: "Fresado de ranuras",
+    href: "https://book.yunzhan365.com/bolny/agfz/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
   {
     id: 3,
@@ -23,6 +24,7 @@ const productos = [
     categoria: "fresado",
     imagen: "files/img_categoria/fresado/fresado_2.jpg",
     descripcion: "Fresado de Alto Avance",
+    href: "https://book.yunzhan365.com/bolny/rfpu/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
 
   {
@@ -31,6 +33,7 @@ const productos = [
     categoria: "fresado",
     imagen: "files/img_categoria/fresado/fresado_3.jpg",
     descripcion: "Mecanizado de Alta Eficiencia en Titánio",
+    href: "https://book.yunzhan365.com/bolny/kcxk/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
 
   {
@@ -39,6 +42,7 @@ const productos = [
     categoria: "fresado",
     imagen: "files/img_categoria/fresado/fresado_5.jpg",
     descripcion: "Fresado y Perforado",
+    href: "https://book.yunzhan365.com/bolny/wapt/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
 
   // Brocas
@@ -49,6 +53,7 @@ const productos = [
     categoria: "perforado",
     imagen: "files/img_categoria/perforado/perforado.jpg",
     descripcion: "Perforado con Mechas Modulares",
+    href: "https://book.yunzhan365.com/bolny/frhi/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
   {
     id: 6,
@@ -57,6 +62,7 @@ const productos = [
     imagen: "files/img_categoria/perforado/perforado_1.jpg",
     descripcion:
       "Perforado de alta eficiencia - diámetros pequeños - agujeros profundos",
+    href: "https://book.yunzhan365.com/bolny/pwzl/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
 
   {
@@ -65,6 +71,7 @@ const productos = [
     categoria: "perforado",
     imagen: "files/img_categoria/perforado/perforado_2.jpg",
     descripcion: "Perforado y fresado",
+    href: "https://book.yunzhan365.com/bolny/wapt/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
 
   // Torneado
@@ -74,6 +81,7 @@ const productos = [
     categoria: "torneado",
     imagen: "files/img_categoria/Torneado/torneado_1.jpg",
     descripcion: "Inserto de Torneado PCD ISO",
+    href: "https://book.yunzhan365.com/bolny/uihg/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
 
   {
@@ -82,6 +90,7 @@ const productos = [
     categoria: "torneado",
     imagen: "files/img_categoria/Torneado/torneado_2.jpg",
     descripcion: "Inserto de Torneado PCBN ISO",
+    href: "https://book.yunzhan365.com/bolny/sqba/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
 
   {
@@ -90,6 +99,7 @@ const productos = [
     categoria: "torneado",
     imagen: "files/img_categoria/Torneado/torneado_3.jpg",
     descripcion: "Torneado de Aceros Exóticos: OP6105A/OP6115A/OP6125A",
+    href: "https://book.yunzhan365.com/bolny/xhfq/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
 
   {
@@ -98,6 +108,7 @@ const productos = [
     categoria: "torneado",
     imagen: "files/img_categoria/Torneado/torneado_4.jpg",
     descripcion: "Torneado de Aceros Endurecidos: OPH120",
+    href: "https://book.yunzhan365.com/bolny/slyd/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
   {
     id: 12,
@@ -105,6 +116,7 @@ const productos = [
     categoria: "torneado",
     imagen: "files/img_categoria/Torneado/torneado_5.jpg",
     descripcion: "Insertos de Cermet con Recubrimiento TiCN",
+    href: "https://book.yunzhan365.com/bolny/reab/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
 
   {
@@ -113,6 +125,7 @@ const productos = [
     categoria: "torneado",
     imagen: "files/img_categoria/Torneado/torneado_7.jpg",
     descripcion: "Mecanizado de Pequeñas Partes",
+    href: "https://book.yunzhan365.com/bolny/uaib/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
 
   // Líneas Generales
@@ -122,6 +135,7 @@ const productos = [
     categoria: "lineasgenerales",
     imagen: "files/img_categoria/general/perforado_3.jpg",
     descripcion: "Nuevos Lanzamientos Año 2023",
+    href: "https://book.yunzhan365.com/bolny/yqvy/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
   },
   {
     id: 15,
@@ -129,6 +143,7 @@ const productos = [
     categoria: "lineasgenerales",
     imagen: "files/img_categoria/general/torneado_6.jpg",
     descripcion: "Catálogo de Insertos",
+    href: "https://book.yunzhan365.com/bolny/asrc/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0",
   },
   {
     id: 16,
@@ -136,6 +151,44 @@ const productos = [
     categoria: "lineasgenerales",
     imagen: "files/img_categoria/general/torneado_8.jpg",
     descripcion: "Catálogo de Herramientas de Corte",
+    href: "https://book.yunzhan365.com/bolny/rpyd/mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0#p=1",
+  },
+
+  // Roscado
+  {
+    id: 17,
+    nombre: "Powetap",
+    categoria: "roscado",
+    imagen: "files/img_categoria/roscado/1.png",
+    descripcion: "La mejor opción para aplicaciones universales",
+    href: "https://guehring.com/wp-content/uploads/2018/dokumente/EN/catalogues-special-programmes/GUE_PowerTap_av_EN.pdf",
+  },
+
+  {
+    id: 18,
+    nombre: "Superline",
+    categoria: ["perforado", "lineasgenerales", "roscado"],
+    imagen: "files/img_categoria/roscado/2.png",
+    descripcion: "Super Calidad - Super Precio - Super Disponibilidad",
+    href: "https://guehring.com/wp-content/uploads/2018/dokumente/Kataloge-und-Sonderprogramme/GUE_SuperLine_av_EN.pdf",
+  },
+
+  {
+    id: 19,
+    nombre: "Powetap",
+    categoria: "roscado",
+    imagen: "files/img_categoria/roscado/3.png",
+    descripcion: "La mejor opción para aplicaciones universales",
+    href: "https://guehring.com/wp-content/uploads/2018/dokumente/Gewinden/GUE_JIS_Gewinde_2017_EN_Internet.pdf",
+  },
+
+  {
+    id: 20,
+    nombre: "Thread Milling Cutters",
+    categoria: "roscado",
+    imagen: "files/img_categoria/roscado/4.png",
+    descripcion: "Fresado de Roscas",
+    href: "https://guehring.com/wp-content/downloads/EN/Threading/Guehring_thread-milling-cutters_EN.pdf",
   },
 
   /* 
@@ -188,7 +241,11 @@ function mostrarProductos(filtroCat = null) {
 
   // Filtra los productos. El filtro lo pasamos a minúsculas para que coincida con el array.
   let filtrados = filtroCat
-    ? productos.filter((p) => p.categoria === filtroCat.toLowerCase())
+    ? productos.filter((p) =>
+        Array.isArray(p.categoria)
+          ? p.categoria.includes(filtroCat)
+          : p.categoria === filtroCat
+      )
     : productos;
 
   if (filtrados.length === 0) {
